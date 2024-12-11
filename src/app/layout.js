@@ -1,13 +1,15 @@
-import { Open_Sans } from "next/font/google";
+import "./globals.css";
+import { Public_Sans } from "next/font/google";
 
-const openSans = Open_Sans({
+const publicSans = Public_Sans({
   subsets: ["latin"],
-  display: "swap",
+  variable: "--public-sans",
+  weight: ["300", "400", "700"],
 });
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={openSans.className}>
+    <html lang="en" className={publicSans.variable}>
       <body>{children}</body>
     </html>
   );
