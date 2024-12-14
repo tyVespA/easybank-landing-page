@@ -1,0 +1,51 @@
+.hero {
+  background-color: var(--very-light-grey);
+}
+
+.container {
+  display: flex;
+  min-height: 700px;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.textSection,
+.imageSection {
+  flex-basis: 50%;
+}
+
+.textSection {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: start;
+}
+
+.textSection h1 {
+  font-size: 50px;
+  max-width: 15ch;
+  line-height: 1.2;
+}
+
+.textSection p {
+  max-width: 42ch;
+}
+
+.imageSection {
+  /* position: relative; */
+}
+
+.mockupImg {
+  position: absolute;
+  z-index: 10;
+  top: -100px;
+  right: -150;
+}
+
+.bgDesktop {
+  position: absolute;
+  z-index: 1;
+  top: -250;
+  right: -450;
+}
