@@ -69,11 +69,17 @@ h6 {
   --dark-blue: hsl(233, 26%, 24%);
   --lime-green: hsl(136, 65%, 51%);
   --bright-cyan: hsl(192, 70%, 51%);
+  --gradient: linear-gradient(90deg, var(--lime-green), var(--bright-cyan));
 
   /* neutral */
   --grayish-blue: hsl(233, 8%, 62%);
   --light-grayish-blue: hsl(220, 16%, 96%);
   --very-light-grey: hsl(0, 0%, 98%);
+}
+
+html,
+body {
+  overflow-x: hidden;
 }
 
 body {
@@ -84,4 +90,29 @@ button {
   cursor: pointer;
   background-color: transparent;
   border: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 400;
+  color: var(--dark-blue);
+}
+
+p {
+  color: var(--grayish-blue);
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* HELPER CLASSES */
+
+.container {
+  padding: 30px;
+  max-width: 1440px;
+  margin-inline: auto;
 }
