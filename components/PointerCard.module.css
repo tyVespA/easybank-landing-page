@@ -1,0 +1,9 @@
+.container h4 {
+  font-size: 24px;
+  padding-block: 30px;
+}
+
+.container p {
+  font-size: 16px;
+  max-width: 25ch;
+}
