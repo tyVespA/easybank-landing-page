@@ -1,12 +1,30 @@
 .footerWrapper {
   background-color: var(--dark-blue);
   color: white;
-  padding-bottom: 25px;
+  padding-block: 25px;
 }
 
 .footerContainer {
   display: flex;
   gap: 100px;
+}
+
+.footerContainer a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.footerContainer ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.footerContainer li {
+  transition: color 0.25s;
+}
+
+.footerContainer li:hover {
+  color: var(--lime-green);
 }
 
 .columnOne {
@@ -21,10 +39,40 @@
   gap: 10px;
 }
 
+.socialsContainer svg {
+  fill: white;
+  transition: fill 0.25s;
+}
+
+.socialsContainer svg:hover {
+  fill: var(--lime-green);
+}
+
 .columnTwo {
   display: flex;
 }
 
+.columnTwo ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.columnTwo .ulColumnTwo {
+  padding-left: 125px;
+}
+
 .columnThree {
   margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.columnThree a {
+  margin-left: auto;
+}
+
+.columnThree p {
+  font-size: 16px;
 }
