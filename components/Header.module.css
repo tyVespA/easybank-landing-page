@@ -43,6 +43,6 @@
   transform-origin: bottom left;
 }
 
-a:hover li {
+.header a:hover li {
   color: var(--dark-blue);
 }
