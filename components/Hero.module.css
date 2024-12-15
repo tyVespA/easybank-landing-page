@@ -40,12 +40,12 @@
   position: absolute;
   z-index: 10;
   top: -100px;
-  right: -150;
+  right: -150px;
 }
 
 .bgDesktop {
   position: absolute;
   z-index: 1;
-  top: -250;
-  right: -450;
+  top: -250px;
+  right: -450px;
 }
