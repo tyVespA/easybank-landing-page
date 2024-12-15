@@ -1,0 +1,9 @@
+.articlesSection {
+  background-color: var(--very-light-grey);
+  padding-block: 70px;
+}
+
+.articlesSection h2 {
+  font-size: 32px;
+  padding-bottom: 40px;
+}
