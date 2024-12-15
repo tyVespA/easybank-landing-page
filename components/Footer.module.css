@@ -1,0 +1,30 @@
+.footerWrapper {
+  background-color: var(--dark-blue);
+  color: white;
+  padding-bottom: 25px;
+}
+
+.footerContainer {
+  display: flex;
+  gap: 100px;
+}
+
+.columnOne {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.socialsContainer {
+  display: flex;
+  gap: 10px;
+}
+
+.columnTwo {
+  display: flex;
+}
+
+.columnThree {
+  margin-left: auto;
+}
