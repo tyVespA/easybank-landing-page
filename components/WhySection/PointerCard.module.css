@@ -1,3 +1,7 @@
+.container {
+  padding-bottom: 25px;
+}
+
 .container h4 {
   font-size: 24px;
   padding-block: 30px;

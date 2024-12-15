@@ -1,15 +1,15 @@
-.container {
+.whySectionContainer {
   background-color: var(--light-grayish-blue);
-  padding-top: 100px;
+  padding-block: 100px;
 }
 
-.container h2 {
+.whySectionContainer h2 {
   font-size: 32px;
   padding-bottom: 20px;
 }
 
 .cardsContainer {
-  padding-block: 100px;
+  padding-top: 100px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;

@@ -1,14 +1,14 @@
 import styles from "./WhySection.module.css";
 import PointerCard from "./PointerCard";
 
-import iconOnline from "../public/images/icon-online.svg";
-import iconBudgeting from "../public/images/icon-budgeting.svg";
-import iconOnboarding from "../public/images/icon-onboarding.svg";
-import iconApi from "../public/images/icon-api.svg";
+import iconOnline from "../../public/images/icon-online.svg";
+import iconBudgeting from "../../public/images/icon-budgeting.svg";
+import iconOnboarding from "../../public/images/icon-onboarding.svg";
+import iconApi from "../../public/images/icon-api.svg";
 
 export default function WhySection() {
   return (
-    <section className={styles.container}>
+    <section className={styles.whySectionContainer}>
       <div className="container">
         <h2>Why choose Easybank?</h2>
         <p>
