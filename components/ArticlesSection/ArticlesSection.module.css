@@ -7,3 +7,10 @@
   font-size: 32px;
   padding-bottom: 40px;
 }
+
+.articlesContainer {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}

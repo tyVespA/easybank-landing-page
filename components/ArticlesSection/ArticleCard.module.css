@@ -1,7 +1,33 @@
 .cardContainer {
   background-color: white;
   max-width: 320px;
+  border-radius: 15px;
+  overflow: hidden;
 }
 
 .cardContainer img {
+}
+
+.textSection {
+  padding: 30px;
+}
+
+.author {
+  font-size: 14px;
+  padding-bottom: 15px;
+}
+
+.title {
+  font-size: 20;
+  line-height: 1.3;
+  padding-bottom: 15px;
+  transition: color 0.2s;
+}
+
+.title:hover {
+  color: var(--lime-green);
+}
+
+.text {
+  font-size: 15px;
 }
