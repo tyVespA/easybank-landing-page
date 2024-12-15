@@ -1,10 +1,14 @@
-import Navbar from "../../components/Navbar";
+import Hero from "../../components/Hero";
+import WhySection from "../../components/WhySection/WhySection";
+import ArticlesSection from "../../components/ArticlesSection/ArticlesSection";
+import Footer from "../../components/Footer";
 
 export default function Home() {
   return (
-    <div>
-      <Navbar />
-      <h1>TEST</h1>
-    </div>
+    <>
+      <Hero />
+      <WhySection />
+      <ArticlesSection />
+    </>
   );
 }
