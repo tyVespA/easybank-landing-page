@@ -45,7 +45,42 @@
 
 .bgDesktop {
   position: absolute;
+  /* display: block; */
   z-index: 1;
   top: -250px;
   right: -450px;
+}
+
+.bgMobile {
+  display: none;
+}
+
+@media screen and (max-width: 1100px) {
+  .container {
+    flex-direction: column-reverse;
+    min-height: 1000px;
+  }
+
+  .imageSection {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+  }
+
+  .mockupImg {
+    width: auto;
+    height: auto;
+    scale: 80%;
+    top: -275px;
+    left: 42.5%;
+    transform: translateX(-50%);
+  }
+
+  .bgDesktop {
+    /* display: none; */
+    top: -550px;
+    scale: 120%;
+    right: 0;
+  }
 }

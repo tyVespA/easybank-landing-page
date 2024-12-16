@@ -30,6 +30,11 @@ export default function Hero() {
               alt="background"
               className={styles.bgDesktop}
             />
+            <Image
+              src={bgMobile}
+              alt="background"
+              className={styles.bgMobile}
+            />
           </div>
         </div>
       </section>
