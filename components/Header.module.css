@@ -2,13 +2,17 @@
   max-width: 100vw;
   background-color: white;
   position: relative;
-  z-index: 1000;
+  z-index: 100;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.backdrop {
+  position: fixed;
 }
 
 .header ol {
@@ -45,4 +49,84 @@
 
 .header a:hover li {
   color: var(--dark-blue);
+}
+
+.icon_hamburger,
+.icon_close {
+  display: none;
+}
+
+@media screen and (max-width: 820) {
+  .header {
+    position: relative;
+    z-index: 10;
+  }
+
+  .header header {
+    position: relative;
+    z-index: 100;
+  }
+
+  .backdrop {
+    transition: all 0.25s;
+    z-index: 5;
+  }
+
+  .backdrop.backdrop_visible {
+    top: 81px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .header nav {
+    position: absolute;
+    z-index: 10;
+    top: 100px;
+    right: 50%;
+    transform: translateX(50%);
+    transition: all 0.25s;
+    width: calc(100% - 60px);
+    border-radius: 15px;
+    padding-block: 30px;
+    background-color: white;
+  }
+
+  .header ol {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .header li {
+    color: var(--dark-blue);
+  }
+
+  .header li::after {
+    display: none;
+  }
+
+  .header a button {
+    display: none;
+  }
+
+  .header nav.opened {
+    display: block;
+  }
+
+  .header nav.closed {
+    right: -400px;
+    /* display: none; */
+  }
+
+  .visible {
+    display: block;
+  }
+  .hidden {
+    display: none;
+  }
+
+  .icon_hamburger {
+    margin-block: 4px;
+  }
 }
